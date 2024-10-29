@@ -2,7 +2,7 @@
 tasks:
   - name: Setup, Install & Build
     before: |
-      curl -fsSL https://deno.land/x/install/install.sh | sh
+      yes | curl -fsSL https://deno.land/x/install/install.sh | sh
       export DENO_INSTALL="/home/gitpod/.deno"
       export PATH="$DENO_INSTALL/bin:$PATH"
       echo 'export DENO_INSTALL="/home/gitpod/.deno"' >> /home/gitpod/.bashrc
